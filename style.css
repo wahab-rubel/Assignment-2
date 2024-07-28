@@ -385,6 +385,36 @@ option{
   color:rgba(255, 255, 255, 0.5);
 }
 
+/** -----------------------------Trainingh and execrise------------------ **/
+.grid{
+  background-color: black !important;
+}
+.training-title{
+  font-size: 48px;
+  color: white;
+  margin-left: 190px;
+  padding: 10px;
+}
+.training-description{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  margin-left: 190px;
+  padding: 10px;
+}
+.grid-image, .grid-image2{
+  display: flex;
+  justify-content: center;
+}
+.gird-item1 img{
+  width: 250px;
+}
+.gird-item2 img{
+  width: 480px;
+  height: 200px;
+}
+.gird-item4 img{
+  width: 347px;
+}
 /** -----------------------------------foot-panel1------------------------ **/
 .foot-panel1{
   background-color: rgba(34, 34, 34, 1);
