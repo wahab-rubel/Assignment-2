@@ -30,6 +30,16 @@
  color: #FFFFFF;
  padding: 10px;
 }
+.primary{
+ display: flex;
+ background-color: #E6533C;
+ border: none;
+ border-radius: 25px;
+ padding: 5px;
+ color: #FFFFFF;
+ font-size: 18px;
+ margin-left: 50px;
+}
 .header-title{
  font-family: 'Miama', sans-serif;
  color: white;
@@ -299,11 +309,13 @@ option{
  border-radius: 30px;
 }
 .execrise-title{
-  margin: 50px;
+  font-size: 48px;
+  margin: 54px;
   color: white;
 }
 .execrise-description{
-  margin: 30px;
+  font-size: 14px;
+  margin: 54px;
   color: rgba(255, 255, 255, 0.5);
 }
 .run-execrise img{
