@@ -1,0 +1,447 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+@import url('https://fonts.cdnfonts.com/css/miama');
+.inter-normal {
+ font-family: "Inter", sans-serif 'Miama', sans-serif;
+ font-optical-sizing: auto;
+ font-style: normal;
+ font-variation-settings:"slnt" 0;
+}
+
+/* ------------------------shared all style----------------------- */
+.display-flex{
+ display: flex;
+}
+.primary{
+ display: flex;
+ background-color: #E6533C;
+ border: none;
+ border-radius: 25px;
+ padding: 5px;
+ color: #FFFFFF;
+ font-size: 18px;
+}
+.btn-primary{
+ background-color: rgba(255, 255, 255, 0.1);
+ border: none;
+ border-radius: 35px;
+ color: #FFFFFF;
+ padding: 10px;
+}
+.header-title{
+ font-family: 'Miama', sans-serif;
+ color: white;
+}
+
+/* ------------------------bg dark color--------------------------- */
+.bg-dark{
+ background-color: #111111;
+}
+
+/* ---text color----- */
+.text-color{
+ color: #FFFFFF;
+}
+
+
+/* ----------------navbar related style---------------------------- */
+.navbar{
+ text-align: center;
+ justify-content: space-between;
+ align-items: center;
+ margin-right: 190px;
+ padding-top: 50px;
+}
+
+.logo{
+ font-weight: 800;
+ font-size: 36px;
+ color: #E6533C;
+ margin-left: 180px;
+}
+.nav-item{
+ list-style: none;
+ margin-right: 50px;
+}
+.nav-links{
+ font-size: 1.6rem;
+ border: .1px solid #777777;
+ border-radius: 3.5rem;
+ align-items: center;
+}
+.nav-link{
+ font-weight:500;
+ font-size: 18px;
+ text-decoration: none;
+ margin: 5px;
+ display: flex;
+}
+
+/** -----------------------Header related style--------------------------------------- **/
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 20px;
+ }
+ .hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 50px;
+ }
+ .hero-text{
+  margin-left: 150px;
+  margin-right: 150px;
+ }
+ .hero-text h1{
+  font-size: 78px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 1.2;
+  margin: 0;
+ }
+ .hero-text h1 span{
+  font-family: 'Miama', sans-serif;                                            
+  color: rgba(255, 255, 255, 1);
+ }
+ .hero-text p{
+  margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.5);
+ }
+.cta-buttons{
+  display: flex;
+  gap: 20px;
+ }
+ .cta-buttons a{
+  text-decoration: none;
+  padding: 12px 25px;
+  border-redius: 30px black;
+  font-weight: 600;
+ }
+ .join-button{
+  background-color: rgba(230, 83, 60, 1);
+  color:rgba(255, 255, 255, 1);
+  border-radius: 50px;
+  display: inline;
+ }
+ .download-button{
+ border: 1px solid rgba(187, 187, 187, 1);
+ color: #fff;
+ border-radius: 50px;
+ display: inline;
+ }
+ .hero-image{
+  position: relative;
+  width: 350px;
+  height: 600px;
+  overflow: hidden;
+  margin-right: 214px; 
+  
+ }
+ .hero-image img{
+  width: 100%;
+  height: auto;
+  margin-right: 250px;
+  border-radius: 10px;
+ }
+ .video-info{
+  position: absolute;
+  bottom: 250px;
+  display: flex;
+  flex-decoration: column;
+  gap: 25px;
+ }
+ .video-info p{
+  color: rgba(239, 237, 232, 0.65);
+ }
+ .video-info img{
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  display: flex;
+ }
+ .info-box-1{
+  background-color:rgba(48, 48, 48, 0.54);
+  color: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 150px;
+ 
+ } 
+ .info-box-2{
+  background-color:rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 150px;
+ } 
+/** ------------------------------------habits exercise-deaitls----------------------- **/
+.habits{
+  background-color: black;
+}
+.exercise-image{
+  display: flex;
+  justify-content: center;
+  aling-items: center;
+}
+.habits-description{
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 14px;
+  text-align: center;
+}
+.exercise-image img{
+  border-color:rgba(255, 255, 255, 1) ;
+  border-radius: 50%;
+  padding: 65px;
+}
+.habits-titles{
+ font-size: 48px;
+ text-align: center;
+ color: rgba(255, 255, 255, 1);
+ padding-top: 50px;
+}
+.habits-title{
+ font-size: 18px;
+ text-align: center;
+ color: rgba(255, 255, 255, 1);
+}
+
+/* ---------------------------------fitness-form--------------------- */
+.fitnese{
+ background-color: rgba(34, 34, 34, 1);
+ height: 487px;
+}
+.table-headling{
+  text-align: center;
+  margin-left: 200px;
+  margin-top: 100px;
+  color: white;
+  padding: 25px;
+}
+table, th, td{
+ font-size: 0.9rem;
+ margin: 10px;
+ padding: 10px 10px;
+ border: 1px solid rgba(255, 255, 255, 0.5);
+ color:rgba(255, 255, 255, 0.5);
+ margin-left: 250px;
+ 
+}
+.calculate-form{
+  margin-top: 50px;
+  margin-left: 400px;
+}
+.calculate-title{
+  font-size: 2rem;
+  color: white;
+  margin: 18px;
+}
+
+.calculate-description{
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 5px;
+}
+.calculate-form input{
+height: 3rem;
+width: 40%;
+margin: 12px;
+background-color: rgba(255, 255, 255, 0.1);
+border: none;
+border-radius: 0.5rem;
+}
+option{
+  color: black;
+}
+#sex{
+  width: 50%;
+  height: 2.5rem;
+  background-color:rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+#factor{
+  width: 95%;
+  background-color:rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 0.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 18px;
+}
+.fitness-form{
+ display: flex;
+}
+/** ----------------------run execrise related style------------------------- **/
+.exercise-image img{
+  display: flex;
+
+}
+.run-execrise{
+ background-color: rgb(0, 0, 0);
+ padding: 100px;
+}
+.execrise{
+ display: flex;
+ background-color: rgba(34, 34, 34, 1);
+ margin: 100px 190px 100px 190px;
+ border-radius: 30px;
+}
+.execrise-title{
+  margin: 50px;
+  color: white;
+}
+.execrise-description{
+  margin: 30px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.run-execrise img{
+ width: 400px;
+ height: 300px;
+ padding: 30px;
+ border-radius: 50px;
+ margin-left: 350px;
+ 
+}
+
+
+/** ----------------------------------team-section-------------------------- **/
+.main-section {
+  font-size: 20px;
+  background-color: black;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56.25rem;
+}
+
+.trainer-section {
+  background-color:rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.trainer-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.trainer-card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.trainer-image {
+  width: 80%;
+  height: 200px;
+  object-fit: cover;
+  filter: grayscale(20%);
+}
+
+.trainer-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+}
+
+.trainer-name {
+  font-size: 1em;
+}
+
+.trainer-title {
+  font-size: 1em;
+  color:rgba(255, 255, 255, 0.5);
+}
+
+/** -----------------------------------foot-panel1------------------------ **/
+.foot-panel1{
+  background-color: rgba(34, 34, 34, 1);
+  display: flex;
+  color: aliceblue;
+  height: 489px;
+  justify-content: center;
+}
+.foot-panel1 ul{
+  padding: 102px;
+}
+.foot-description{
+  color:rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+.foot-title1{
+  color: rgba(230, 83, 60, 1);
+  font-weight: 700;
+  font-size: 80px;
+  padding: 20px;
+}
+.foot-title2{
+  font-weight: 700;
+  font-size: 32px;
+  margin: 39px;
+}
+
+ul a {
+  display: block;
+  margin: 30px;
+  font-size: 30px;
+}
+.foot-description-title{
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  margin: 35px;
+}
+.foot-panel3-description{
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 25px;
+}
+.foot-description-title p{
+  padding: 10px;
+}
+.foot-panel3{
+  background-color:rgba(34, 34, 34, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.foot-panel3 p{
+  color: rgba(255, 255, 255, 0.5);
+  
+}
+
+
+/* -------------------------------Responsive midea quary----------------------------------- */
+@media screen and (max-width: 576px){
+  .display-flex{
+    flex-direction: column;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .trainer-section {
+      grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .trainer-section {
+      grid-template-columns: 1fr;
+  }
+}
