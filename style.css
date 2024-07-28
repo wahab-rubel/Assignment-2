@@ -30,15 +30,19 @@
  color: #FFFFFF;
  padding: 10px;
 }
-.primary{
+.ctn-primary{
  display: flex;
  background-color: #E6533C;
  border: none;
  border-radius: 25px;
- padding: 5px;
+ padding: 10px;
  color: #FFFFFF;
  font-size: 18px;
  margin-left: 50px;
+ width: 150px;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 25px;
 }
 .header-title{
  font-family: 'Miama', sans-serif;
