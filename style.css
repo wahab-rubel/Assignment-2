@@ -116,7 +116,7 @@
   font-size: 78px;
   color: rgba(255, 255, 255, 1);
   line-height: 1.2;
-  margin: 0;
+  margin: 20px;
  }
  .hero-text h1 span{
   font-family: 'Miama', sans-serif;                                            
@@ -181,6 +181,7 @@
   display: flex;
  }
  .info-box-1{
+  position: relative;
   background-color:rgba(48, 48, 48, 0.54);
   color: #fff;
   padding: 15px;
@@ -188,9 +189,11 @@
   font-weight: bold;
   text-align: center;
   width: 150px;
+  top: 150px;
  
  } 
  .info-box-2{
+  position: relative;
   background-color:rgba(255, 255, 255, 0.1);
   color: #fff;
   padding: 10px;
@@ -198,6 +201,7 @@
   font-weight: bold;
   text-align: center;
   width: 150px;
+  bottom: 100px;
  } 
 /** ------------------------------------habits exercise-deaitls----------------------- **/
 .habits{
