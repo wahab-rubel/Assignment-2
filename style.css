@@ -234,7 +234,7 @@
 }
 
 /* ---------------------------------fitness-form--------------------- */
-.fitnese{
+.fitness{
  background-color: rgba(34, 34, 34, 1);
 }
 .table-headling{
@@ -545,14 +545,25 @@ ul a {
     flex-direction: column;
     border: none;
   }
-  ..fitnese{
-    
+  .fitness{
+    height: 772px;
   }
   .fitness-form{
     flex-direction: column;
   }
+  .table-headling{
+    margin: 0 auto;
+  }
+  .table-title{
+    display: inline;
+    position: relative;
+  }
+  .calculate-form{
+    margin-top: auto;
+    margin-left: auto;
+  }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .trainer-section {
       grid-template-columns: repeat(2, 1fr);
   }
@@ -564,8 +575,15 @@ ul a {
     align-items: center;
   }
 }
-@media (max-width: 576px) {
+@media screen and (max-width: 576px) {
   .main-section{
-    flex-direction: column;
+   flex-direction: column;
+   font-size: 10px;
+   height: auto;
   }
+  .foot-panel1, .foot-panel3{
+    flex-direction: column;
+    height:auto;
+  }
+   
 }
