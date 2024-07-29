@@ -19,7 +19,7 @@
  background-color: #E6533C;
  border: none;
  border-radius: 25px;
- padding: 5px;
+ padding: 10px;
  color: #FFFFFF;
  font-size: 18px;
 }
@@ -39,7 +39,7 @@
  color: #FFFFFF;
  font-size: 18px;
  margin-left: 50px;
- width: 150px;
+  width: 150px;
   text-align: center;
   justify-content: center;
   margin-bottom: 25px;
@@ -77,16 +77,16 @@
 }
 .nav-item{
  list-style: none;
- margin-right: 50px;
+ margin-right: 60px;
 }
 .nav-links{
  font-size: 1.6rem;
  border: .1px solid #777777;
- border-radius: 3.5rem;
+ border-radius: 6rem;
  align-items: center;
 }
 .nav-link{
- font-weight:500;
+ font-weight:700;
  font-size: 18px;
  text-decoration: none;
  margin: 5px;
@@ -96,7 +96,6 @@
 /** -----------------------Header related style--------------------------------------- **/
 .hero-section{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 100px 20px;
@@ -477,9 +476,35 @@ ul a {
 
 
 /* -------------------------------Responsive midea quary----------------------------------- */
-@media screen and (max-width: 576px){
-  .display-flex{
+@media only screen and (min-width:576px) {
+  .hero-section{
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 576px){
+  .hero{
+    flex-direction: column;
+    width: 0;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 576px){
+  .hero-text{
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+@media only screen and (max-width: 576px){
+  .hero-text h1{
+    font-size: 30px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 576px){
+  .display-flex, .nav-links{
+    flex-direction: column;
+    border: none;
   }
 }
 
