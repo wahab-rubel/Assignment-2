@@ -2,23 +2,27 @@
   margin: 0;
   padding: 0;
 }
+            
 @import url('https://fonts.cdnfonts.com/css/miama');
 .inter-normal {
- font-family: "Inter", sans-serif 'Miama', sans-serif;
+ font-family: "Inter", sans-serif 'Miami', sans-serif;
  font-optical-sizing: auto;
  font-style: normal;
- font-variation-settings:"slnt" 0;
+ font-variation-settings:"sent" 0;
 }
 
 /* ------------------------shared all style----------------------- */
 .display-flex{
  display: flex;
 }
+.shape{
+  font-family: 'Miama';
+}
 .primary{
  display: flex;
  background-color: #E6533C;
  border: none;
- border-radius: 25px;
+ border-radius: 20px;
  padding: 10px;
  color: #FFFFFF;
  font-size: 18px;
@@ -43,10 +47,6 @@
   text-align: center;
   justify-content: center;
   margin-bottom: 25px;
-}
-.header-title{
- font-family: 'Miama', sans-serif;
- color: white;
 }
 
 /* ------------------------bg dark color--------------------------- */
@@ -118,7 +118,7 @@
   margin: 20px;
  }
  .hero-text h1 span{
-  font-family: 'Miama', sans-serif;                                            
+  font-family: 'Mama', sans-serif;                                            
   color: rgba(255, 255, 255, 1);
  }
  .hero-text p{
@@ -166,7 +166,6 @@
   position: absolute;
   bottom: 250px;
   display: flex;
-  flex-decoration: column;
   gap: 25px;
  }
  .video-info p{
@@ -201,14 +200,14 @@
   width: 150px;
   bottom: 100px;
  } 
-/** ------------------------------------habits exercise-deaitls----------------------- **/
+/** ------------------------------------habits exercise style----------------------- **/
 .habits{
   background-color: black;
 }
 .exercise-image{
   display: flex;
   justify-content: center;
-  aling-items: center;
+  align-items: center;
 }
 .habits-description{
   font-size: 1rem;
@@ -233,97 +232,100 @@
  color: rgba(255, 255, 255, 1);
 }
 
-/* ---------------------------------fitness-form--------------------- */
-.fitness{
- background-color: rgba(34, 34, 34, 1);
+/** -----------------------------fitness-chart-------------------------------------- **/
+.fitness-chart{
+  background-color: rgba(34, 34, 34, 1);
 }
-.table-headling{
-  text-align: center;
-  margin-left: 200px;
-  margin-top: 100px;
-  color: white;
-  padding: 25px;
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35.4rem;
+  gap: 2rem;
+  padding: 0 2rem;
 }
-table, th, td{
- font-size: 0.9rem;
- margin: 10px;
- padding: 10px 10px;
- border: 1px solid rgba(255, 255, 255, 0.5);
- color:rgba(255, 255, 255, 0.5);
- margin-left: 250px;
- 
+.bmi-chart, .bmi-calculator{
+  background-color: rgba(34, 34, 34, 1);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
 }
-.calculate-form{
-  margin-top: 50px;
-  margin-left: 400px;
+h2{
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
 }
-.calculate-title{
-  font-size: 2rem;
-  color: white;
-  margin: 18px;
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
 }
 
-.calculate-description{
+th, td{
+  padding: 0.7rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  
+}
+td{
+ color: rgba(153, 153, 153, 1);
+}
+th {
+  color: rgba(255, 255, 255, 1);
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+input, select{
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+.submit-button{
+  width: 224px;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(230, 83, 60, 1);
+  color: #fff;
+}
+p{
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.5);
-  padding: 5px;
+  color: rgba(153, 153, 153, 1);
 }
-.calculate-form input{
-height: 3rem;
-width: 40%;
-margin: 12px;
-background-color: rgba(255, 255, 255, 0.1);
-border: none;
-border-radius: 0.5rem;
-}
-option{
-  color: black;
-}
-#sex{
-  width: 50%;
-  height: 2.5rem;
-  background-color:rgba(255, 255, 255, 0.1);
-  border: none;
-  border-radius: 0.5rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-#factor{
-  width: 95%;
-  background-color:rgba(255, 255, 255, 0.1);
-  border: none;
-  border-radius: 0.5rem;
-  color: rgba(255, 255, 255, 0.6);
-  padding: 18px;
-}
-.fitness-form{
- display: flex;
-}
-/** ----------------------run execrise related style------------------------- **/
+
+/** ----------------------run exercise related style------------------------- **/
 .exercise-image img{
   display: flex;
 
 }
-.run-execrise{
+.run-exercise{
  background-color: rgb(0, 0, 0);
  padding: 100px;
 }
-.execrise{
+.exercise{
  display: flex;
  background-color: rgba(34, 34, 34, 1);
  margin: 100px 190px 100px 190px;
  border-radius: 30px;
 }
-.execrise-title{
+.exercise-title{
   font-size: 48px;
   margin: 54px;
   color: white;
 }
-.execrise-description{
+.exercise-description{
   font-size: 14px;
   margin: 54px;
   color: rgba(255, 255, 255, 0.5);
 }
-.run-execrise img{
+.run-exercise img{
  width: 400px;
  height: 300px;
  padding: 30px;
@@ -472,8 +474,7 @@ ul a {
   
 }
 
-
-/* -------------------------------Responsive midea quary----------------------------------- */
+/** -------------------------------Responsive medea quay----------------------------------- **/
 @media only screen and (min-width:576px) {
   .hero-section{
     flex-direction: column;
