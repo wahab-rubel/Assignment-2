@@ -15,8 +15,8 @@
 .display-flex{
  display: flex;
 }
-.shape{
-  font-family: 'Miama';
+span{
+  font-family: 'Brush Script MT', cursive;
 }
 .primary{
  display: flex;
@@ -388,28 +388,31 @@ p{
   color:rgba(255, 255, 255, 0.5);
 }
 
-/** -----------------------------Trainingh and execrise------------------ **/
+/** -----------------------------Training and exercise------------------ **/
 .grid{
   background-color: black !important;
 }
 .training-title{
   font-size: 48px;
   color: white;
-  margin-left: 190px;
+  text-align: center !important;
   padding: 10px;
 }
 .training-description{
   color: rgba(255, 255, 255, 0.5);
   font-size: 14px;
-  margin-left: 190px;
+  text-align: center;
   padding: 10px;
 }
 .grid-image, .grid-image2{
+  padding: 8px;
   display: flex;
   justify-content: center;
 }
 .gird-item1 img{
   width: 250px;
+  padding: 10px;
+  opacity: 50%;
 }
 .gird-item2 img{
   width: 480px;
@@ -517,20 +520,20 @@ ul a {
     flex-direction: column;
     width: 300px;
   }
-  .execrise-title{
+  .exercise-title{
     width: 300px;
   }
-  .execrise-description{
+  .exercise-description{
     width: 300px;
   }
   .exercise-details{
     margin-left: 150px;
   }
-  .run-execrise{
+  .run-exercise{
     width: 100%;
     height: 100%;
   }
-  .execrise{
+  .exercise{
     flex-direction: column;
     margin-left: 0px;
   }
@@ -569,6 +572,7 @@ ul a {
       grid-template-columns: repeat(2, 1fr);
   }
   .training-title{
+    font-size: 20px;
     padding: 0px;
   }
   .grid-image, .grid-image2{
@@ -582,9 +586,16 @@ ul a {
    font-size: 10px;
    height: auto;
   }
-  .foot-panel1, .foot-panel3{
+  .foot-panel3{
     flex-direction: column;
-    height:auto;
+  }
+  .foot-panel1{
+    height: auto !important;
+    flex-direction: column !important;
+  }
+  .foot-panel1 ul{
+    padding: 0px;
+    align-items: center;
   }
    
 }
