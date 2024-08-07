@@ -498,7 +498,6 @@ ul a {
 @media screen and (max-width: 576px){
   .hero{
     flex-direction: column;
-    width: 0;
     margin-top: 15px;
   }
   .nav-item{
@@ -508,16 +507,13 @@ ul a {
   .nav-links{
     margin-left: 150px;
   }
-  .ctn-primary{
-    margin-bottom: 0;
-  }
   .run-image img{
     margin-left: auto !important;
   }
 }
 @media screen and (max-width: 576px){
   .hero-text{
-    margin-left: 100%;
+    margin: auto !important;
   }
   .hero-image{
     width: 350px;
@@ -550,12 +546,7 @@ ul a {
     margin-left: 0px;
   }
 }
-@media only screen and (max-width: 576px){
-  .hero-text h1{
-    font-size: 30px;
-    margin: 0;
-  }
-}
+
 @media screen and (max-width: 576px){
   .display-flex, .nav-links{
     flex-direction: column;
@@ -592,6 +583,12 @@ ul a {
   }
   .bmi-chart, .bmi-calculator{
     padding: 0px;
+  }
+  .card-image{
+    display: none;
+  }
+  .card-image-1{
+    display: none;
   }
 }
 @media screen and (max-width: 576px) {
