@@ -4,7 +4,6 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
 .inter-normal {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -14,10 +13,6 @@
 /* ------------------------shared all style----------------------- */
 .display-flex{
  display: flex;
-}
-span{
-  font-family: "Cedarville Cursive", cursive;
-  font-weight: 400;
 }
 .primary{
  display: flex;
@@ -44,10 +39,10 @@ span{
  color: #FFFFFF;
  font-size: 18px;
  margin-left: 50px;
-  width: 150px;
-  text-align: center;
-  justify-content: center;
-  margin-bottom: 25px;
+ width: 150px;
+ text-align: center;
+ justify-content: center;
+ margin-bottom: 25px;
 }
 
 /* ------------------------bg dark color--------------------------- */
@@ -82,7 +77,7 @@ span{
 }
 .nav-links{
  font-size: 1.6rem;
- border: .1px solid #777777;
+ border: .1px solid #292424;
  border-radius: 6rem;
  align-items: center;
 }
@@ -90,28 +85,25 @@ span{
  font-weight:700;
  font-size: 18px;
  text-decoration: none;
- margin: 5px;
- display: flex;
+ margin: 1px;
 }
 
 /** -----------------------Header related style--------------------------------------- **/
 .hero-section{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 100px 20px;
- 
+  gap: 100px;
  }
  .hero{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  margin-top: 50px;
+  margin-top: 15px;
  }
- .hero-text{
-  margin-left: 150px;
-  margin-right: 150px;
+ span{
+  font-family: "Grey Qo", cursive;
+  font-size: 400;
  }
  .hero-text h1{
   font-size: 78px;
@@ -119,11 +111,7 @@ span{
   line-height: 1.2;
   margin: 20px;
  }
- .hero-text h1 span{
-  font-family: 'Mama', sans-serif;                                            
-  color: rgba(255, 255, 255, 1);
- }
- .hero-text p{
+ .hero-description{
   margin: 20px;
   font-size: 18px;
   line-height: 1.5;
@@ -151,58 +139,52 @@ span{
  border-radius: 50px;
  display: inline;
  }
- .hero-image{
-  position: relative;
-  width: 350px;
-  height: 600px;
-  overflow: hidden;
-  margin-right: 214px; 
-  
- }
- .hero-image img{
-  width: 100%;
-  height: auto;
-  margin-right: 250px;
-  border-radius: 10px;
- }
- .video-info{
-  position: absolute;
-  bottom: 250px;
-  display: flex;
-  gap: 25px;
- }
- .video-info p{
-  color: rgba(239, 237, 232, 0.65);
- }
- .video-info img{
-  height: 40px;
-  width: 40px;
+
+/** ------------------------slider card style ----------------------- **/
+
+ .card-image img{
+  height: 30px;
+  width: 30px;
   border-radius: 100%;
-  display: flex;
+  margin-left: 20px;
  }
- .info-box-1{
+ .card-image{
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color:rgba(48, 48, 48, 0.54);
   color: #fff;
-  padding: 15px;
-  border-radius: 5px;
   font-weight: bold;
-  text-align: center;
-  width: 150px;
-  top: 150px;
- 
- } 
- .info-box-2{
-  position: relative;
-  background-color:rgba(255, 255, 255, 0.1);
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  font-weight: bold;
-  text-align: center;
-  width: 150px;
-  bottom: 100px;
- } 
+  gap: 15px;
+  width: 193px;
+  height: 98px;
+  border-radius: 15px;
+}
+ .card-view{
+  margin-top: 30px;
+  width: 220px;
+  height: 120px;
+ }
+ .card-view h1{
+  font-size: 20px;
+  color: rgba(250, 250, 249, 1);
+ }
+ .card-view p{
+  font-size: 16px;
+  color: rgba(239, 237, 232, 0.65);
+ }
+
+
+
+
+
+
+
+
+
+
+
 /** ------------------------------------habits exercise style----------------------- **/
 .habits{
   background-color: black;
