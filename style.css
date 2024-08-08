@@ -5,6 +5,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Grey+Qo&family=Ingrid+Darling&family=Playwrite+CU:wght@100..400&display=swap');
+
 .inter-normal {
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -91,17 +92,25 @@
 }
 
 /** -----------------------Header related style--------------------------------------- **/
+.hero-image img{
+  position: absolute;
+  top: 15px
+}
 .hero-section{
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  gap: 100px;
+  
  }
  .hero{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
+  justify-content: space-evenly;
+
+ }
+ .hero-text{
+  margin: 100px;
+ }
+ .hero-image img{
+  margin: 150px;
  }
  span{
   font-family: "Grey Qo", cursive;
@@ -148,18 +157,21 @@
   border-radius: 100%;
   margin-left: 20px;
  }
+ .card-info{
+  
+ }
  .card-image{
-  position: relative;
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color:rgba(71, 66, 66, 0.54);
   color: #808080;
   font-weight: bold;
-  gap: 15px;
   width: 193px;
   height: 98px;
   border-radius: 15px;
+  margin-top: 400px;
 }
  .card-view{
   margin-top: 50px;
@@ -181,8 +193,6 @@
   margin-left: 20px;
  }
 
-
-
  .card-image-1{
   position: relative;
   display: flex;
@@ -191,11 +201,10 @@
   background-color:rgba(71, 66, 66, 0.54);
   color: #808080;
   font-weight: bold;
-  gap: 15px;
   width: 193px;
   height: 98px;
   border-radius: 15px;
-  margin-bottom: 300px;
+  margin-top: 100px;
 }
  .card-view{
   width: 220px;
@@ -210,15 +219,6 @@
   font-size: 16px;
   color: rgba(239, 237, 232, 0.65);
  }
-
-
-
-
-
-
-
-
-
 
 
 /** ------------------------------------habits exercise style----------------------- **/
