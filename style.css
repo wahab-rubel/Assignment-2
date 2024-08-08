@@ -99,12 +99,11 @@
 .hero-section{
   display: flex;
   justify-content: space-between;
-  
  }
  .hero{
   display: flex;
   justify-content: space-evenly;
-
+  
  }
  .hero-text{
   margin: 100px;
@@ -156,9 +155,6 @@
   width: 30px;
   border-radius: 100%;
   margin-left: 20px;
- }
- .card-info{
-  
  }
  .card-image{
   position: absolute;
@@ -375,14 +371,11 @@ p{
   border-radius: 10px 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
 .trainer-image {
   width: 80%;
   height: 200px;
   object-fit: cover;
 }
-
 .trainer-info {
   position: absolute;
   bottom: 0;
@@ -391,11 +384,9 @@ p{
   padding: 10px;
   color: white;
 }
-
 .trainer-name {
   font-size: 1em;
 }
-
 .trainer-title {
   font-size: 1em;
   color:rgba(255, 255, 255, 0.5);
@@ -490,7 +481,7 @@ ul a {
 }
 
 /** -------------------------------Responsive medea quay----------------------------------- **/
-@media only screen and (min-width:576px) {
+@media screen and (min-width:576px) {
   .hero-section{
     flex-direction: column;
   }
@@ -498,7 +489,6 @@ ul a {
 @media screen and (max-width: 576px){
   .hero{
     flex-direction: column;
-    margin-top: 15px;
   }
   .nav-item{
     margin-right: 0px;
@@ -514,15 +504,6 @@ ul a {
 @media screen and (max-width: 576px){
   .hero-text{
     margin: auto !important;
-  }
-  .hero-image{
-    width: 350px;
-    height: 588px;
-    margin-left: 150px;
-  }
-  .run-image img{
-    width: 287px;
-    height: 170px;
   }
   .exercise-image{
     flex-direction: column;
