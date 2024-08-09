@@ -12,7 +12,7 @@
   font-style: normal;
 }
 
-/* ------------------------shared all style----------------------- */
+/** ------------------------shared all style----------------------- **/
 .display-flex{
  display: flex;
 }
@@ -41,24 +41,24 @@
  color: #FFFFFF;
  font-size: 18px;
  margin-left: 50px;
- width: 150px;
+ width: 224px;
  text-align: center;
  justify-content: center;
  margin-bottom: 25px;
 }
 
-/* ------------------------bg dark color--------------------------- */
+/** ------------------------bg dark color--------------------------- **/
 .bg-dark{
  background-color: #111111;
 }
 
-/* ---text color----- */
+/** ----------------------text color------------------------------- **/
 .text-color{
  color: #FFFFFF;
 }
 
 
-/* ----------------navbar related style---------------------------- */
+/** ----------------navbar related style---------------------------- **/
 .navbar{
  text-align: center;
  justify-content: space-between;
@@ -92,25 +92,12 @@
 }
 
 /** -----------------------Header related style--------------------------------------- **/
-.hero-image img{
-  position: absolute;
-  top: 15px
-}
-.hero-section{
-  display: flex;
-  justify-content: space-between;
- }
  .hero{
   display: flex;
   justify-content: space-evenly;
-  
+  align-items: center;
  }
- .hero-text{
-  margin: 100px;
- }
- .hero-image img{
-  margin: 150px;
- }
+ 
  span{
   font-family: "Grey Qo", cursive;
   font-size: 400;
@@ -149,7 +136,6 @@
  }
 
 /** ------------------------slider card style ----------------------- **/
-
  .card-image img{
   height: 30px;
   width: 30px;
@@ -348,6 +334,10 @@ p{
  border-radius: 50px;
  margin-left: 350px;
 }
+.run-image img{
+width: 366px;
+height: 312px;
+}
 /** ----------------------------------team-section-------------------------- **/
 .main-section {
   font-size: 20px;
@@ -412,16 +402,16 @@ p{
   display: flex;
   justify-content: center;
 }
-.gird-item1 img{
+.grid-item1 img{
   width: 250px;
   padding: 10px;
   opacity: 50%;
 }
-.gird-item2 img{
+.grid-item2 img{
   width: 480px;
   height: 200px;
 }
-.gird-item4 img{
+.grid-item4 img{
   width: 347px;
 }
 /** -----------------------------------foot-panel1------------------------ **/
@@ -429,11 +419,10 @@ p{
   background-color: rgba(34, 34, 34, 1);
   display: flex;
   color: aliceblue;
-  height: 489px;
   justify-content: center;
 }
 .foot-panel1 ul{
-  padding: 102px;
+  padding: 50px;
 }
 .foot-description{
   color:rgba(255, 255, 255, 0.5);
@@ -480,61 +469,216 @@ ul a {
   
 }
 
-/** -------------------------------Responsive medea quay----------------------------------- **/
-@media screen and (min-width:576px) {
-  .hero-section{
-    flex-direction: column;
+
+
+
+
+/** -------------------------------HEADER MEDIA QUERY----------------------------------- **/
+@media screen and (max-width: 576px) {
+  .bg-dark{
+    width: 393px;
+    height: 1024px;
   }
-}
-@media screen and (max-width: 576px){
+  .display-flex, .nav-links{
+      flex-direction: column;
+      border: none;
+    }
+  .nav-item{
+      margin-right: 0px;
+      margin-top: 15px;
+    }
+  .nav-links{
+      margin-left: 150px;
+    }
   .hero{
     flex-direction: column;
   }
-  .nav-item{
-    margin-right: 0px;
-    margin-top: 15px;
+  .logo{
+    width: 353px;
+    font-size: 36px;
   }
-  .nav-links{
-    margin-left: 150px;
-  }
-  .run-image img{
-    margin-left: auto !important;
-  }
-}
-@media screen and (max-width: 576px){
   .hero-text{
+    width:353px;
     margin: auto !important;
   }
-  .exercise-image{
+  .hero-title{
+    width: 280px;
+    font-size: 36px;
+  }
+  .hero-description{
+    width: 274px;
+    font-size: 16px;
+  }
+  .hero-section{
     flex-direction: column;
-    width: 300px;
   }
-  .exercise-title{
-    width: 300px;
+  .hero-image img{
+    width: 230px;
+    height: 400px;
   }
-  .exercise-description{
-    width: 300px;
-  }
-  .exercise-details{
-    margin-left: 150px;
-  }
-  .run-exercise{
-    width: 100%;
-    height: 100%;
-  }
-  .exercise{
-    flex-direction: column;
-    margin-left: 0px;
+  .join-button{
+   font-size: 10px;
   }
 }
 
+/** -----------------------------HABITS SECTION STYLE----------------------- **/
 @media screen and (max-width: 576px){
-  .display-flex, .nav-links{
-    flex-direction: column;
-    border: none;
+  .habits{
+    width:395px;
+    height: 1024px;
   }
-  .fitness{
-    height: 772px;
+  .exercise-image{
+    flex-direction: column;
+  }
+  .exercise-image img{
+    padding: 10px;
+  }
+  .habits-titles{
+    font-size: 30px;
+  }
+  .habits-descriptions{
+    font-size: 5px;
+  }
+  .box1{
+    width: 200px;
+  }
+  .box1 img{
+    margin-left: 30px;
+    width: 100px;
+    height: 100px;
+  }
+  .habits-title{
+    font-size: 10px;
+    
+  }
+}
+
+/** -----------------------------RUN SECTION STYLE-------------------------- **/
+@media screen and (max-width: 576px){
+  .run{
+    width: 395px;
+    height: auto;
+  }
+  .exercise{
+    width: 300px;
+    height: 490px;
+    margin: auto;
+  }
+  .exercise-title{
+    font-size: 30px;
+    margin-top: 15px;
+  }
+  .exercise-description{
+    width: 287px;
+    font-size: 14px;
+  }
+  .ctn-primary{
+    padding: 5px;
+  }
+  .run-image img{
+    margin-left: auto !important;
+    width: 280px;
+    height: 160px;
+    margin-top: 0px;
+  }
+  .exercise{
+    flex-direction: column;
+    width: 353px;
+    height: 531px;
+    margin: auto;
+  }
+}
+
+/**-----------------GRID SECTION MEDIA QUERY------------------ **/
+
+@media screen and (max-width: 576px){
+  .grid{
+    width:395px;
+   height: auto;
+  }
+  .training-title{
+    width: 331px;
+    font-size: 30px;
+  }
+  .training-description{
+    width: 331px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .grid-item1 img{
+    grid-template-columns: repeat(1, 1fr);
+    width: 100px;
+    height: 80px;
+  }
+  .grid-item2 img{
+    display: none !important;
+  }
+  .grid-item4 img{
+    display: none !important;
+  }
+}
+
+/**-----------------TRAINER SECTION MEDIA QUERY------------------ **/
+@media screen and (max-width: 576px) {
+  .main-section{
+    width:395px;
+    height: auto;
+  }
+  .trainer-section {
+    width: 353px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .trainer-image{
+    height: 200px;
+  }
+  .training-title{
+    font-size: 20px;
+    padding: 0px;
+  }
+}
+
+/** ------------------------- FITNESS SECTION STYLE --------------------------- **/
+@media screen and (max-width: 576px) {
+ .fitness-chart{
+  width: 394px;
+  height: 772px;
+ }
+ .container{
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  height: auto;
+  gap: 0.5px;
+ }
+  .bmi-chart h2{
+    font-size: 12px;
+  }
+  table{
+    width: 310px;
+    height: 216px;
+  }
+  th{
+    font-size: 16px;
+  }
+  td{
+    font-size: 14px;
+  }
+  .bmi-calculator h2{
+    font-size: 16px;
+  }
+  .bmi-calculator p{
+    width: 200px;
+    font-size: 12px;
+  }
+  form{
+    width: 353px;
+    flex-direction: column;
+  }
+  form input{
+    width: 170px;
+  }
+  select{
+    width: 192px;
   }
   .fitness-form{
     flex-direction: column;
@@ -550,21 +694,6 @@ ul a {
     margin-top: auto;
     margin-left: auto;
   }
-  .container{
-    flex-direction: column;
-    height: auto;
-    gap: 0px;
-    padding: 5px;
-    margin-bottom: 10px;
-  }
-  .form{
-    flex-direction: column;
-    margin-top: 0px;
-    gap: 5px;
-  }
-  .bmi-chart, .bmi-calculator{
-    padding: 0px;
-  }
   .card-image{
     display: none;
   }
@@ -572,36 +701,21 @@ ul a {
     display: none;
   }
 }
+
+/** -----------------------------FOOTER SECTION STYLE----------------------- **/
 @media screen and (max-width: 576px) {
-  .trainer-section {
-      grid-template-columns: repeat(1, 1fr);
-      align-items: center;
-  }
-  .training-title{
-    font-size: 20px;
-    padding: 0px;
-  }
-  .grid-image, .grid-image2{
+  .foot-panel1{
+    width: 393px;
+    height: 986px;
     flex-direction: column;
-    align-items: center;
-  }
-}
-@media screen and (max-width: 576px) {
-  .main-section{
-   flex-direction: column;
-   height: auto;
+    text-align: center;
   }
   .foot-panel3{
     flex-direction: column;
-  }
-  .foot-panel1{
-    flex-direction: column;
-    height: auto;
-    text-align: center;
+    width: 353px;
   }
   .foot-panel1 ul{
-    padding: 0px;
+    padding: 0;
     align-items: center;
   }
-   
 }
