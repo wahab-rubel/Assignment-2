@@ -313,31 +313,34 @@ p{
 }
 .exercise{
  display: flex;
+ justify-content: center;
+ align-items: center;
  background-color: rgba(34, 34, 34, 1);
- margin: 100px 190px 100px 190px;
  border-radius: 30px;
+ width: 1060px;
+ height: 371px;
+ margin-left: 200px;
+}
+.column{
+  width: 443px;
+  height: 290px;
 }
 .exercise-title{
   font-size: 48px;
-  margin: 54px;
   color: white;
+  margin-bottom: 14px;
 }
 .exercise-description{
   font-size: 14px;
-  margin: 54px;
   color: rgba(255, 255, 255, 0.5);
-}
-.run-exercise img{
- width: 400px;
- height: 300px;
- padding: 30px;
- border-radius: 50px;
- margin-left: 350px;
+  margin-bottom: 34px;
 }
 .run-image img{
-width: 366px;
-height: 312px;
+  width: 366px;
+  height: 312px;
+  border-radius:18px ;
 }
+
 /** ----------------------------------team-section-------------------------- **/
 .main-section {
   font-size: 20px;
@@ -551,35 +554,28 @@ ul a {
 @media screen and (max-width: 576px){
   .run{
     width: 395px;
-    height: auto;
-  }
-  .exercise{
-    width: 300px;
-    height: 490px;
-    margin: auto;
   }
   .exercise-title{
     font-size: 30px;
-    margin-top: 15px;
+    text-align: center;
   }
   .exercise-description{
-    width: 287px;
     font-size: 14px;
+    text-align: center;
   }
-  .ctn-primary{
-    padding: 5px;
-  }
+  
   .run-image img{
-    margin-left: auto !important;
-    width: 280px;
-    height: 160px;
-    margin-top: 0px;
+    width: 287px;
+    height: 170px;
   }
   .exercise{
     flex-direction: column;
-    width: 353px;
+    width:353px;
     height: 531px;
-    margin: auto;
+    margin-left: auto;
+    align-items: center;
+    justify-content: center;
+
   }
 }
 
