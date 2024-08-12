@@ -246,74 +246,6 @@ z-index: 1;
  color: rgba(255, 255, 255, 1);
 }
 
-/** -----------------------------fitness-chart-------------------------------------- **/
-.fitness-chart{
-  background-color: rgba(34, 34, 34, 1);
-}
-.container{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35.4rem;
-  gap: 2rem;
-  padding: 0 2rem;
-}
-.bmi-chart, .bmi-calculator{
-  background-color: rgba(34, 34, 34, 1);
-  padding: 2rem;
-  border-radius: 8px;
-  max-width: 400px;
-  width: 100%;
-}
-h2{
-  color: rgba(255, 255, 255, 1);
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
-table{
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 1rem;
-}
-
-th, td{
-  padding: 0.7rem;
-  text-align: center;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  
-}
-td{
- color: rgba(153, 153, 153, 1);
-}
-th {
-  color: rgba(255, 255, 255, 1);
-}
-form{
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-input, select{
-  padding: 0.8rem;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
-  color: #fff;
-}
-.submit-button{
-  width: 224px;
-  padding: 0.8rem;
-  border: none;
-  border-radius: 25px;
-  background-color: rgba(230, 83, 60, 1);
-  color: #fff;
-}
-p{
-  font-size: 0.9rem;
-  color: rgba(153, 153, 153, 1);
-}
-
 /** ----------------------run exercise related style------------------------- **/
 .exercise-image img{
   display: flex;
@@ -385,35 +317,92 @@ p{
 .grid-item4 img{
   width: 347px;
 }
-/** ----------------------------------team-section-------------------------- **/
-.trainer-section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
+/** -----------------------------fitness-chart-------------------------------------- **/
+.fitness-chart{
+  background-color: rgba(34, 34, 34, 1);
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35.4rem;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.bmi-chart, .bmi-calculator{
+  background-color: rgba(34, 34, 34, 1);
+  padding: 2rem;
+  border-radius: 8px;
+  max-width: 400px;
   width: 100%;
 }
+h2{
+  color: rgba(255, 255, 255, 1);
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
 
+th, td{
+  padding: 0.7rem;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  
+}
+td{
+ color: rgba(153, 153, 153, 1);
+}
+th {
+  color: rgba(255, 255, 255, 1);
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+input, select{
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+.submit-button{
+  width: 224px;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(230, 83, 60, 1);
+  color: #fff;
+}
+p{
+  font-size: 0.9rem;
+  color: rgba(153, 153, 153, 1);
+}
+
+/** ----------------------------------team-section style-------------------------- **/
+.trainer-section {
+  background-color: rgba(82, 76, 76, 0.2);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .trainer-card {
   position: relative;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.trainer-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .trainer-image {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  filter: grayscale(20%);
-  transition: filter 0.3s ease;
+  width: 326px;
+  height: 272px;
+  padding: 15px;
+  border-radius: 20px;
 }
 
 .trainer-card:hover .trainer-image {
@@ -426,16 +415,13 @@ p{
   left: 0;
   right: 0;
   padding: 20px;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
   color: white;
   text-align: left;
 }
-
 .trainer-name {
   font-size: 1.5em;
   margin: 0;
 }
-
 .trainer-title {
   font-size: 1em;
   color: #CCCCCC;
@@ -677,8 +663,9 @@ p{
   .card-info2{
     width: 115.73px;
     height: 56.58px;
-    right: 250px;
-    bottom: 200px;
+    bottom: 190px;
+    right: 100px;
+
   }
 }
 
@@ -687,6 +674,7 @@ p{
   .foot-panel1{
     flex-direction: column;
     text-align: center;
+    gap: 0.1em;
   }
   .foot-panel3{
     flex-direction: column;
