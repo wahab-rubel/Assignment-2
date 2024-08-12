@@ -136,6 +136,18 @@
  }
 
 /** ------------------------slider card style ----------------------- **/
+.card-info1{
+position: absolute;
+right: 550px;
+bottom: 260px;
+z-index: 1;
+}
+.card-info2{
+  position: absolute;
+  right: 220px;
+  bottom: 520px;
+  z-index: 1;
+}
  .card-image img{
   height: 30px;
   width: 30px;
@@ -143,7 +155,6 @@
   margin-left: 20px;
  }
  .card-image{
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,10 +164,10 @@
   width: 193px;
   height: 98px;
   border-radius: 15px;
-  margin-top: 400px;
 }
  .card-view{
   margin-top: 50px;
+  margin-left: 10px;
   width: 220px;
   height: 120px;
  }
@@ -341,49 +352,6 @@ p{
   border-radius:18px ;
 }
 
-/** ----------------------------------team-section-------------------------- **/
-.main-section {
-  font-size: 20px;
-  background-color: black;
-  color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 56.25rem;
-}
-
-.trainer-section {
-  background-color:rgba(255, 255, 255, 0.1);
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.trainer-card {
-  position: relative;
-  overflow: hidden;
-  border-radius: 10px 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-.trainer-image {
-  width: 80%;
-  height: 200px;
-  object-fit: cover;
-}
-.trainer-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  color: white;
-}
-.trainer-name {
-  font-size: 1em;
-}
-.trainer-title {
-  font-size: 1em;
-  color:rgba(255, 255, 255, 0.5);
-}
 /** -----------------------------Training and exercise------------------ **/
 .grid{
   background-color: black !important;
@@ -417,36 +385,75 @@ p{
 .grid-item4 img{
   width: 347px;
 }
+/** ----------------------------------team-section-------------------------- **/
+.main-section {
+  font-size: 20px;
+  background-color: black;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 56.25rem;
+}
+
+.trainer-section {
+  background-color:rgba(255, 255, 255, 0.1);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.trainer-card {
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.trainer-image {
+  width: 80%;
+  height: 200px;
+  object-fit: cover;
+}
+.trainer-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  color: white;
+}
+.trainer-name {
+  font-size: 1em;
+}
+.trainer-title {
+  font-size: 1em;
+  color:rgba(255, 255, 255, 0.5);
+}
 /** -----------------------------------foot-panel1------------------------ **/
 .foot-panel1{
   background-color: rgba(34, 34, 34, 1);
   display: flex;
   color: aliceblue;
   justify-content: center;
-}
-.foot-panel1 ul{
+  gap: 100px;
   padding: 50px;
 }
+.foot-panel1 ul p{
+  padding: 10px;
+}
 .foot-description{
-  color:rgba(255, 255, 255, 0.5);
   font-size: 14px;
+  color:rgba(255, 255, 255, 0.5);
+  margin-top: 20px;
 }
 .foot-title1{
-  color: rgba(230, 83, 60, 1);
   font-weight: 700;
-  font-size: 80px;
-  padding: 20px;
+  font-size: 70px;
+  margin-top: 30px;
+  color: rgba(230, 83, 60, 1);
 }
 .foot-title2{
   font-weight: 700;
   font-size: 32px;
   margin: 39px;
-}
-
-ul a {
-  display: block;
-  margin: 30px;
-  font-size: 30px;
 }
 .foot-description-title{
   color: rgba(255, 255, 255, 0.5);
@@ -684,11 +691,15 @@ ul a {
     margin-top: auto;
     margin-left: auto;
   }
-  .card-image{
-    display: none;
+  .card-info1{
+    right: 300px;
+    top: 850px;
   }
-  .card-image-1{
-    display: none;
+  .card-info2{
+    width: 115.73px;
+    height: 56.58px;
+    right: 250px;
+    bottom: 200px;
   }
 }
 
