@@ -386,47 +386,61 @@ p{
   width: 347px;
 }
 /** ----------------------------------team-section-------------------------- **/
-.main-section {
-  font-size: 20px;
-  background-color: black;
-  color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 56.25rem;
-}
-
 .trainer-section {
-  background-color:rgba(255, 255, 255, 0.1);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .trainer-card {
   position: relative;
   overflow: hidden;
+  border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.trainer-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 .trainer-image {
-  width: 80%;
-  height: 200px;
+  width: 100%;
+  height: 300px;
   object-fit: cover;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
 }
+
+.trainer-card:hover .trainer-image {
+  filter: grayscale(0%);
+}
+
 .trainer-info {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 10px;
+  padding: 20px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.3) 100%);
   color: white;
+  text-align: left;
 }
+
 .trainer-name {
-  font-size: 1em;
+  font-size: 1.5em;
+  margin: 0;
 }
+
 .trainer-title {
   font-size: 1em;
-  color:rgba(255, 255, 255, 0.5);
+  color: #CCCCCC;
 }
+
 /** -----------------------------------foot-panel1------------------------ **/
 .foot-panel1{
   background-color: rgba(34, 34, 34, 1);
@@ -479,10 +493,7 @@ p{
 
 /** -------------------------------HEADER MEDIA QUERY----------------------------------- **/
 @media screen and (max-width: 576px) {
-  .bg-dark{
-    width: 393px;
-    height: 1024px;
-  }
+  
   .display-flex, .nav-links{
       flex-direction: column;
       border: none;
@@ -503,7 +514,7 @@ p{
   }
   .hero-text{
     width:353px;
-    margin: auto !important;
+    margin: auto;
   }
   .hero-title{
     width: 280px;
@@ -527,10 +538,6 @@ p{
 
 /** -----------------------------HABITS SECTION STYLE----------------------- **/
 @media screen and (max-width: 576px){
-  .habits{
-    width:395px;
-    height: 1024px;
-  }
   .exercise-image{
     flex-direction: column;
   }
@@ -559,9 +566,6 @@ p{
 
 /** -----------------------------RUN SECTION STYLE-------------------------- **/
 @media screen and (max-width: 576px){
-  .run{
-    width: 395px;
-  }
   .exercise-title{
     font-size: 30px;
     text-align: center;
@@ -589,10 +593,6 @@ p{
 /**-----------------GRID SECTION MEDIA QUERY------------------ **/
 
 @media screen and (max-width: 576px){
-  .grid{
-    width:395px;
-   height: auto;
-  }
   .training-title{
     width: 331px;
     font-size: 30px;
@@ -616,30 +616,19 @@ p{
 }
 
 /**-----------------TRAINER SECTION MEDIA QUERY------------------ **/
-@media screen and (max-width: 576px) {
-  .main-section{
-    width:395px;
-    height: auto;
-  }
+@media (max-width: 768px) {
   .trainer-section {
-    width: 353px;
-    grid-template-columns: repeat(1, 1fr);
+      grid-template-columns: repeat(2, 1fr);
   }
-  .trainer-image{
-    height: 200px;
-  }
-  .training-title{
-    font-size: 20px;
-    padding: 0px;
+}
+@media (max-width: 480px) {
+  .trainer-section {
+      grid-template-columns: 1fr;
   }
 }
 
 /** ------------------------- FITNESS SECTION STYLE --------------------------- **/
 @media screen and (max-width: 576px) {
- .fitness-chart{
-  width: 394px;
-  height: 772px;
- }
  .container{
   flex-direction: column;
   align-items: center;
@@ -666,16 +655,6 @@ p{
   .bmi-calculator p{
     width: 200px;
     font-size: 12px;
-  }
-  form{
-    width: 353px;
-    flex-direction: column;
-  }
-  form input{
-    width: 170px;
-  }
-  select{
-    width: 192px;
   }
   .fitness-form{
     flex-direction: column;
@@ -706,17 +685,13 @@ p{
 /** -----------------------------FOOTER SECTION STYLE----------------------- **/
 @media screen and (max-width: 576px) {
   .foot-panel1{
-    width: 393px;
-    height: 986px;
     flex-direction: column;
     text-align: center;
   }
   .foot-panel3{
     flex-direction: column;
-    width: 353px;
   }
   .foot-panel1 ul{
-    padding: 0;
     align-items: center;
   }
 }
