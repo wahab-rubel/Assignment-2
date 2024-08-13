@@ -326,30 +326,45 @@ z-index: 1;
 }
 .grid-item2 img{
   width: 32.5rem;
-  height: 200px;
+  height: 12.6rem;
   opacity: 0.3;
 }
 .grid-item3 img{
-  width: 290px;
-  height: 200px;
+  width: 18rem;
+  height: 12.9rem;
   opacity: 0.3;
 }
 .grid-item4 img{
-  width: 425px;
-  height: 200px;
+  width: 26.56rem;
+  height: 12.5rem;
   opacity: 0.3;
 }
 .grid-item5 img{
-  width: 288px;
-  height: 200px;
+  width: 18rem;
+  height: 12.5rem;
   opacity: 0.3;
 }
 .grid-item6 img{
-  width: 347px;
+  width: 21.69rem;
   opacity: 0.3;
-  height: 200px;
+  height: 12.7rem;
 }
 /** -----------------------------fitness-chart-------------------------------------- **/
+.fitness-chart-section{
+  background-color: #000;
+  padding: 5.5rem;
+}
+.chart-title{
+  font-size: 3rem;
+  text-align: center;
+  color: #ffff;
+  margin-bottom: 1rem;
+}
+.chart-description{
+  font-size: .88rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
 .fitness-chart{
   background-color: rgba(34, 34, 34, 1);
 }
@@ -360,12 +375,13 @@ z-index: 1;
   height: 35.4rem;
   gap: 2rem;
   padding: 0 2rem;
+  margin-top: 2.5rem;
 }
 .bmi-chart, .bmi-calculator{
   background-color: rgba(34, 34, 34, 1);
   padding: 2rem;
   border-radius: 8px;
-  max-width: 400px;
+  max-width: 25rem;
   width: 100%;
 }
 h2{
@@ -405,10 +421,10 @@ input, select{
   color: #fff;
 }
 .submit-button{
-  width: 224px;
+  width: 14rem;
   padding: 0.8rem;
   border: none;
-  border-radius: 25px;
+  border-radius: 1.56rem;
   background-color: rgba(230, 83, 60, 1);
   color: #fff;
 }
@@ -425,100 +441,100 @@ p{
   padding: 3.43rem 1.37rem;
  }
  .team-section h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
+  font-size: 2.25rem;
+  margin-bottom: 0.63rem;
  }
  .subtitle {
-  font-size: 18px;
+  font-size: 1.13rem;
   color: #ccc;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
  }
  .team-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 1.25rem;
   justify-content: center;
-  max-width: 1060px;
+  width: 66.25rem;
   margin: 0 auto;
  }
  .team-member {
-  background-color: #1c1c1c;
-  border-radius: 10px;
-  padding: 20px;
+  background-color: #383737;
+  border-radius: 0.63rem;
+  padding: 1.25rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- }
+}
  .team-member img {
-  border-radius: 10px;
-  width: 326px;
-  height: 275px;
-  margin-bottom: 15px;
- }
+  border-radius: 0.63rem;
+  width: 20.38rem;
+  height: 17.19rem;
+  margin-bottom: 0.94rem;
+}
  .team-member h3 {
   position:absolute;
-  font-size: 20px;
-  margin-left: 30px;
-  top: 3400px;
+  font-size: 1.25rem;
+  margin-left: 1.88rem;
+  top: 234rem;
  }
  .team-member p {
   position:absolute;
-  top: 3430px;
-  margin-left: 30px;
-  font-size: 16px;
+  top: 235.3rem;
+  margin-left: 1.88rem;
+  font-size: 1rem;
   color: #aaa;
  }
  .team-member-1 {
   background-color: #1c1c1c;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 0.63rem;
+  padding: 1.25rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- }
+}
  .team-member-1 img {
-  border-radius: 10px;
-  width: 326px;
-  height: 272px;
-  margin-bottom: 20px;
- }
+  border-radius: 0.63rem;
+  width: 20.38rem;
+  height: 17rem;
+  margin-bottom: 1.25rem;
+}
  .team-member-1 h3 {
   position:absolute;
-  font-size: 20px;
-  margin-left: 30px;
-  top: 3750px;
+  font-size: 1.25rem;
+  margin-left: 1.88rem;
+  top: 255rem;
   
  }
  .team-member-1 p {
   position:absolute;
-  top: 236rem;
+  top: 256.4rem;
   margin-left: 1.87rem;
   font-size: 1rem;
   color: #aaa;
  }
  .team-member-2 {
   background-color: #1c1c1c;
-  border-radius: 10px;
-  padding: 20px;
+  border-radius: 0.63rem;
+  padding: 1.25rem;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
- }
+}
  .team-member-2 img {
-  border-radius: 10px;
-  width: 326px;
-  height: 272px;
-  margin-bottom: 10px;
- }
+  border-radius: 0.63rem;
+  width: 20.38rem;
+  height: 17rem;
+  margin-bottom: 0.63rem;
+}
  .team-member-2 h3 {
   position:absolute;
-  font-size: 20px;
-  margin-left: 30px;
-  top: 3750px;
+  font-size: 1.25rem;
+  margin-left: 1.88rem;
+  top: 254.38rem;
  }
  .team-member-2 p {
   position:absolute;
   margin-left: 1.87rem;
   font-size: 1rem;
   color: #aaa;
-  top: 236rem;
+  top: 256rem;
  }
  
  
@@ -528,32 +544,32 @@ p{
   display: flex;
   color: aliceblue;
   justify-content: center;
-  gap: 100px;
-  padding: 50px;
+  gap: 6.25rem;
+  padding: 3.13rem;
 }
 .foot-panel1 ul p{
-  padding: 10px;
+  padding: 0.63rem;
 }
 .foot-description{
-  font-size: 14px;
+  font-size: 0.88rem;
   color:rgba(255, 255, 255, 0.5);
-  margin-top: 20px;
+  margin-top: 1.25rem;
 }
 .foot-title1{
   font-weight: 700;
-  font-size: 70px;
-  margin-top: 30px;
+  font-size: 4.38rem;
+  margin-top: 1.88rem;
   color: rgba(230, 83, 60, 1);
 }
 .foot-title2{
   font-weight: 700;
-  font-size: 32px;
-  margin: 39px;
+  font-size: 2rem;
+  margin: 2.44rem;
 }
 .foot-description-title{
   color: rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  margin: 35px;
+  font-size: 1.25rem;
+  margin: 2.19rem;
 }
 
 .foot-panel3{
@@ -561,7 +577,7 @@ p{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1) ;
 }
 .foot-panel3 p{
@@ -707,18 +723,6 @@ p{
   }
 }
 
-/**-----------------TRAINER SECTION MEDIA QUERY------------------ **/
-@media (max-width: 768px) {
-  .trainer-section {
-      grid-template-columns: repeat(1, 1fr);
-  }
-}
-@media (max-width: 480px) {
-  .trainer-section {
-      grid-template-columns: 1fr;
-  }
-}
-
 /** ------------------------- FITNESS SECTION STYLE --------------------------- **/
 @media screen and (max-width: 576px) {
  .container{
@@ -772,6 +776,21 @@ p{
     bottom: 190px;
     right: 100px;
 
+  }
+}
+
+/**-----------------TRAINER SECTION MEDIA QUERY------------------ **/
+@media (max-width: 768px) {
+  .team-container {
+      grid-template-columns: repeat(2, 2fr);
+  }
+  .team-member-1, .team-member-2{
+   display: none;
+  }
+}
+@media (max-width: 480px) {
+  .trainer-section {
+      grid-template-columns: 1fr;
   }
 }
 
