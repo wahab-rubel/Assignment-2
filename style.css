@@ -418,47 +418,110 @@ p{
 }
 
 /** ----------------------------------team-section style-------------------------- **/
-.trainer-section {
-  background-color: rgba(82, 76, 76, 0.2);
+.team-section {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 3.43rem 1.37rem;
+ }
+ .team-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+ }
+ .subtitle {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 40px;
+ }
+ .team-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-}
-.trainer-card {
-  position: relative;
-  overflow: hidden;
+  gap: 20px;
+  justify-content: center;
+  max-width: 1060px;
+  margin: 0 auto;
+ }
+ .team-member {
+  background-color: #1c1c1c;
   border-radius: 10px;
+  padding: 20px;
+  text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.trainer-image {
+ }
+ .team-member img {
+  border-radius: 10px;
+  width: 326px;
+  height: 275px;
+  margin-bottom: 15px;
+ }
+ .team-member h3 {
+  position:absolute;
+  font-size: 20px;
+  margin-left: 30px;
+  top: 3400px;
+ }
+ .team-member p {
+  position:absolute;
+  top: 3430px;
+  margin-left: 30px;
+  font-size: 16px;
+  color: #aaa;
+ }
+ .team-member-1 {
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ .team-member-1 img {
+  border-radius: 10px;
   width: 326px;
   height: 272px;
-  padding: 15px;
-  border-radius: 20px;
-}
-
-.trainer-card:hover .trainer-image {
-  filter: grayscale(0%);
-}
-
-.trainer-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  margin-bottom: 20px;
+ }
+ .team-member-1 h3 {
+  position:absolute;
+  font-size: 20px;
+  margin-left: 30px;
+  top: 3750px;
+  
+ }
+ .team-member-1 p {
+  position:absolute;
+  top: 236rem;
+  margin-left: 1.87rem;
+  font-size: 1rem;
+  color: #aaa;
+ }
+ .team-member-2 {
+  background-color: #1c1c1c;
+  border-radius: 10px;
   padding: 20px;
-  color: white;
-  text-align: left;
-}
-.trainer-name {
-  font-size: 1.5em;
-  margin: 0;
-}
-.trainer-title {
-  font-size: 1em;
-  color: #CCCCCC;
-}
-
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ }
+ .team-member-2 img {
+  border-radius: 10px;
+  width: 326px;
+  height: 272px;
+  margin-bottom: 10px;
+ }
+ .team-member-2 h3 {
+  position:absolute;
+  font-size: 20px;
+  margin-left: 30px;
+  top: 3750px;
+ }
+ .team-member-2 p {
+  position:absolute;
+  margin-left: 1.87rem;
+  font-size: 1rem;
+  color: #aaa;
+  top: 236rem;
+ }
+ 
+ 
 /** -----------------------------------foot-panel1------------------------ **/
 .foot-panel1{
   background-color: rgba(34, 34, 34, 1);
