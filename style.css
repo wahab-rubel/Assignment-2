@@ -20,31 +20,31 @@
  display: flex;
  background-color: #E6533C;
  border: none;
- border-radius: 20px;
- padding: 10px;
+ border-radius: 1.25rem;
+ padding: .625rem;
  color: #FFFFFF;
- font-size: 18px;
+ font-size: 1.125rem;
 }
 .btn-primary{
  background-color: rgba(255, 255, 255, 0.1);
  border: none;
- border-radius: 35px;
+ border-radius: 2.19rem;
  color: #FFFFFF;
- padding: 10px;
+ padding: .63rem;
 }
 .ctn-primary{
  display: flex;
  background-color: #E6533C;
  border: none;
- border-radius: 25px;
- padding: 10px;
+ border-radius: 1.56rem;
+ padding: .63rem;
  color: #FFFFFF;
- font-size: 18px;
- margin-left: 50px;
- width: 224px;
+ font-size: 1.13rem;
+ margin-left: 3.13rem;
+ width: 14rem;
  text-align: center;
  justify-content: center;
- margin-bottom: 25px;
+ margin-bottom: 1.65rem;
 }
 
 /** ------------------------bg dark color--------------------------- **/
@@ -63,19 +63,19 @@
  text-align: center;
  justify-content: space-between;
  align-items: center;
- margin-right: 190px;
- padding-top: 50px;
+ margin-right: 11.88rem;
+ padding-top: 3.13rem;
 }
 
 .logo{
  font-weight: 800;
- font-size: 36px;
+ font-size: 2.25rem;
  color: #E6533C;
- margin-left: 180px;
+ margin-left: 11.25rem;
 }
 .nav-item{
  list-style: none;
- margin-right: 60px;
+ margin-right: 3.75rem;
 }
 .nav-links{
  font-size: 1.6rem;
@@ -85,7 +85,7 @@
 }
 .nav-link{
  font-weight:700;
- font-size: 18px;
+ font-size: 1.13rem;
  text-decoration: none;
  margin: 1px;
  display: flex;
@@ -100,7 +100,7 @@
  
  span{
   font-family: "Grey Qo", cursive;
-  font-size: 400;
+  font-weight: 400;
  }
  .hero-title{
   font-size: 78px;
