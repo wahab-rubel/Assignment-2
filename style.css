@@ -305,17 +305,49 @@ z-index: 1;
   display: flex;
   justify-content: center;
 }
+
+.grid-item1{
+  background-color: rgba(6, 255, 210, 0.5);
+}
+.grid-item2 {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+.grid-item5 {
+  background-color: rgba(66, 255, 0, 0.3);
+}
+.grid-item6 {
+  background-color: rgba(0, 71, 255, 0.3);
+}
+
 .grid-item1 img{
   width: 250px;
-  padding: 10px;
-  opacity: 50%;
+  height: 200px;
+  opacity: 0.3;
 }
 .grid-item2 img{
-  width: 480px;
+  width: 520px;
   height: 200px;
+  opacity: 0.3;
+}
+.grid-item3 img{
+  width: 290px;
+  height: 200px;
+  opacity: 0.3;
 }
 .grid-item4 img{
+  width: 425px;
+  height: 200px;
+  opacity: 0.3;
+}
+.grid-item5 img{
+  width: 288px;
+  height: 200px;
+  opacity: 0.3;
+}
+.grid-item6 img{
   width: 347px;
+  opacity: 0.3;
+  height: 200px;
 }
 /** -----------------------------fitness-chart-------------------------------------- **/
 .fitness-chart{
@@ -579,6 +611,9 @@ p{
 /**-----------------GRID SECTION MEDIA QUERY------------------ **/
 
 @media screen and (max-width: 576px){
+  .grid-image{
+    flex-direction: column repeat(2, 1fr);
+  }
   .training-title{
     width: 331px;
     font-size: 30px;
@@ -589,14 +624,22 @@ p{
     color: rgba(255, 255, 255, 0.5);
   }
   .grid-item1 img{
-    grid-template-columns: repeat(1, 1fr);
-    width: 100px;
-    height: 80px;
+    width:175px;
+    height: 124px;
   }
   .grid-item2 img{
-    display: none !important;
+    width:175px;
+    height: 124px;
   }
   .grid-item4 img{
+    width:175px;
+    height: 124px;
+  }
+  .grid-item5 img{
+    width:175px;
+    height: 124px;
+  }
+  .grid-item3, .grid-item6{
     display: none !important;
   }
 }
@@ -604,7 +647,7 @@ p{
 /**-----------------TRAINER SECTION MEDIA QUERY------------------ **/
 @media (max-width: 768px) {
   .trainer-section {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 480px) {
