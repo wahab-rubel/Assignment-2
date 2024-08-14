@@ -782,10 +782,11 @@ p{
 /**-----------------TRAINER SECTION MEDIA QUERY------------------ **/
 @media (max-width: 768px) {
   .team-container {
-      grid-template-columns: repeat(2, 2fr);
+      grid-template-columns: repeat(1, 2fr);
+      width: 353px;
   }
-  .team-member-1, .team-member-2{
-   display: none;
+  .team-member, .team-member-1{
+   grid-template-columns: repeat(1, 1fr);
   }
 }
 @media (max-width: 480px) {
@@ -800,6 +801,7 @@ p{
     flex-direction: column;
     text-align: center;
     gap: 0.1em;
+    padding: 0px;
   }
   .foot-panel3{
     flex-direction: column;
