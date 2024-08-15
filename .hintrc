@@ -6,14 +6,7 @@
     "axe/forms": [
       "default",
       {
-        "select-name": "off",
-        "label": "off"
-      }
-    ],
-    "axe/text-alternatives": [
-      "default",
-      {
-        "image-alt": "off"
+        "select-name": "off"
       }
     ],
     "axe/structure": [

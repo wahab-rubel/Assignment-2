@@ -788,6 +788,13 @@ p{
   .team-member, .team-member-1{
    grid-template-columns: repeat(1, 1fr);
   }
+  .team-member h3, .team-member-1 h3, .team-member-2 h3{
+    top: auto;
+  }
+  .team-member p, .team-member-1 p, .team-member-2 p{
+    position: absolute;
+    top: auto;
+  }
 }
 @media (max-width: 480px) {
   .trainer-section {
